@@ -1,0 +1,387 @@
+<html>
+    <head>
+        <title> HoneyBakes!</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="https://img.icons8.com/?size=100&id=46370&format=png&color=000000">
+    </head>
+    <body>
+        <table class="main_table">
+            <tr>
+                <!-- PAGE 09 : ORDER -->
+                <td class="ganjil">
+                    <div class="page-line full-wrapper">
+                        <div class="center-wrapper">
+                            <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
+                                <div class="menuthemes">
+                                    <h1 class="flavors brownie semigede" style="text-align: right;">Order Here!</h1>
+                                </div>
+                                <div>
+                                    <img class="menuimg radius-round borderline" src="https://i.pinimg.com/736x/44/a5/c0/44a5c0f9573eeed419f8b719e88961b2.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <form id="form-order" class="form-wrapper radius-normal borderline mystery brownie" action="#" method="post">
+                            <fieldset>
+                                <legend>Your Details</legend>
+                                <div class="baris">
+                                    <label for="nama">Name</label>
+                                    <input type="text" id="nama" name="nama" placeholder="e.g. Honey Bunny" required>
+                                </div>
+                                <div class="baris">
+                                    <label for="wa">WhatsApp</label>
+                                    <input type="tel" id="wa" name="wa" placeholder="08xxxxxxxxxx" pattern="08[0-9]{8,11}" required>
+                                    <span class="bantuan">starts with 08, 10–13 digits</span>
+                                </div>
+                                <div class="baris">
+                                    <label for="email-order">Email (optional)</label>
+                                    <input type="email" id="email-order" name="email" placeholder="you@email.com">
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>Your Order</legend>
+                                <span class="bantuan">open a category, then fill in the quantity</span>
+
+                                <details class="kategori" open>
+                                    <summary>Breads &amp; Loaves</summary>
+                                    <label class="item-pesan"><span>Milky Cloud Loaf</span><span class="emilys">Rp45,000</span><input type="number" name="milky-cloud-loaf" min="0" max="20" value="0" data-harga="45000"></label>
+                                    <label class="item-pesan"><span>Chocolate Pull-Apart Bread</span><span class="emilys">Rp28,000</span><input type="number" name="chocolate-pull-apart" min="0" max="20" value="0" data-harga="28000"></label>
+                                    <label class="item-pesan"><span>Lavender Sourdough</span><span class="emilys">Rp52,000</span><input type="number" name="lavender-sourdough" min="0" max="20" value="0" data-harga="52000"></label>
+                                    <label class="item-pesan"><span>Round-Cheek Brioche</span><span class="emilys">Rp32,000</span><input type="number" name="round-cheek-brioche" min="0" max="20" value="0" data-harga="32000"></label>
+                                </details>
+                                <details class="kategori">
+                                    <summary>Croissants &amp; Pastries</summary>
+                                    <label class="item-pesan"><span>Butter Croissant</span><span class="emilys">Rp22,000</span><input type="number" name="butter-croissant" min="0" max="20" value="0" data-harga="22000"></label>
+                                    <label class="item-pesan"><span>Pain au Chocolat</span><span class="emilys">Rp26,000</span><input type="number" name="pain-au-chocolat" min="0" max="20" value="0" data-harga="26000"></label>
+                                    <label class="item-pesan"><span>Almond Croissant</span><span class="emilys">Rp30,000</span><input type="number" name="almond-croissant" min="0" max="20" value="0" data-harga="30000"></label>
+                                    <label class="item-pesan"><span>Cromboloni</span><span class="emilys">Rp32,000</span><input type="number" name="cromboloni" min="0" max="20" value="0" data-harga="32000"></label>
+                                </details>
+                                <details class="kategori">
+                                    <summary>Cakes &amp; Slices</summary>
+                                    <label class="item-pesan"><span>Strawberry Shortcake</span><span class="emilys">Rp38,000/slice</span><input type="number" name="strawberry-shortcake" min="0" max="20" value="0" data-harga="38000"></label>
+                                    <label class="item-pesan"><span>Red Velvet</span><span class="emilys">Rp35,000/slice</span><input type="number" name="red-velvet" min="0" max="20" value="0" data-harga="35000"></label>
+                                    <label class="item-pesan"><span>Basque Burnt Cheesecake</span><span class="emilys">Rp42,000/slice</span><input type="number" name="basque-cheesecake" min="0" max="20" value="0" data-harga="42000"></label>
+                                    <label class="item-pesan"><span>Rainbow Layer Cake</span><span class="emilys">Rp33,000/slice</span><input type="number" name="rainbow-layer-cake" min="0" max="20" value="0" data-harga="33000"></label>
+                                </details>
+                                <details class="kategori">
+                                    <summary>Cupcakes &amp; Muffins</summary>
+                                    <label class="item-pesan"><span>Crown Cupcake</span><span class="emilys">Rp19,000</span><input type="number" name="crown-cupcake" min="0" max="20" value="0" data-harga="19000"></label>
+                                    <label class="item-pesan"><span>Unicorn Cupcake</span><span class="emilys">Rp20,000</span><input type="number" name="unicorn-cupcake" min="0" max="20" value="0" data-harga="20000"></label>
+                                    <label class="item-pesan"><span>Blueberry Muffin</span><span class="emilys">Rp30,000</span><input type="number" name="blueberry-muffin" min="0" max="20" value="0" data-harga="30000"></label>
+                                    <label class="item-pesan"><span>Molten Chocolate Muffin</span><span class="emilys">Rp18,000</span><input type="number" name="molten-chocolate-muffin" min="0" max="20" value="0" data-harga="18000"></label>
+                                </details>
+                                <details class="kategori">
+                                    <summary>Cookies &amp; Biscuits</summary>
+                                    <label class="item-pesan">
+                                        <span>Chunky Chocolate Cookie</span>
+                                        <span class="emilys">Rp15,000</span>
+                                        <input type="number" name="chunky-chocolate-cookie" min="0" max="20" value="0" data-harga="15000">
+                                    </label>
+                                    <label class="item-pesan"><span>Sugar Star Cookies</span><span class="emilys">Rp12,000</span><input type="number" name="sugar-star-cookies" min="0" max="20" value="0" data-harga="12000"></label>
+                                    <label class="item-pesan"><span>Matcha White Choc Cookie</span><span class="emilys">Rp16,000</span><input type="number" name="matcha-cookie" min="0" max="20" value="0" data-harga="16000"></label>
+                                    <label class="item-pesan"><span>Cat's Tongue Biscuits</span><span class="emilys">Rp25,000/jar</span><input type="number" name="cats-tongue" min="0" max="20" value="0" data-harga="25000"></label>
+                                </details>
+                                <details class="kategori">
+                                    <summary>Doughnuts</summary>
+                                    <label class="item-pesan"><span>Pink Glazed Doughnut</span><span class="emilys">Rp12,000</span><input type="number" name="pink-glazed-doughnut" min="0" max="20" value="0" data-harga="12000"></label>
+                                    <label class="item-pesan"><span>Rainbow Sprinkle Doughnut</span><span class="emilys">Rp14,000</span><input type="number" name="rainbow-sprinkle-doughnut" min="0" max="20" value="0" data-harga="14000"></label>
+                                    <label class="item-pesan"><span>Custard Bomboloni</span><span class="emilys">Rp16,000</span><input type="number" name="custard-bomboloni" min="0" max="20" value="0" data-harga="16000"></label>
+                                    <label class="item-pesan"><span>Tiramisu Doughnut</span><span class="emilys">Rp15,000</span><input type="number" name="tiramisu-doughnut" min="0" max="20" value="0" data-harga="15000"></label>
+                                </details>
+                                <details class="kategori">
+                                    <summary>Tarts &amp; Pies</summary>
+                                    <label class="item-pesan"><span>Glass Strawberry Tart</span><span class="emilys">Rp28,000</span><input type="number" name="glass-strawberry-tart" min="0" max="20" value="0" data-harga="28000"></label>
+                                    <label class="item-pesan"><span>Egg Tart</span><span class="emilys">Rp13,000</span><input type="number" name="egg-tart" min="0" max="20" value="0" data-harga="13000"></label>
+                                    <label class="item-pesan"><span>Lemon Meringue</span><span class="emilys">Rp30,000</span><input type="number" name="lemon-meringue" min="0" max="20" value="0" data-harga="30000"></label>
+                                    <label class="item-pesan"><span>Cinnamon Apple Pie</span><span class="emilys">Rp26,000/slice</span><input type="number" name="cinnamon-apple-pie" min="0" max="20" value="0" data-harga="26000"></label>
+                                </details>
+
+                                <div class="total">
+                                    <span>Subtotal</span>
+                                    <output id="total" for="form-order">Rp0</output>
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>Pickup / Delivery</legend>
+                                <div class="baris pilihan">
+                                    <label><input type="radio" name="metode" value="pickup" checked> Pickup at store</label>
+                                    <label><input type="radio" name="metode" value="delivery"> Delivery</label>
+                                </div>
+                                <div class="baris" id="baris-alamat" hidden>
+                                    <label for="alamat">Delivery address</label>
+                                    <textarea id="alamat" name="alamat" rows="2" placeholder="street, house number, landmark"></textarea>
+                                </div>
+                                <div class="baris">
+                                    <label for="tanggal">Date</label>
+                                    <input type="date" id="tanggal" name="tanggal" required>
+                                </div>
+                                <div class="baris">
+                                    <label for="jam">Time</label>
+                                    <input type="time" id="jam" name="jam" min="07:00" max="20:00" required>
+                                    <span class="bantuan">open 07:00 – 20:00</span>
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>Extras</legend>
+                                <div class="baris pilihan">
+                                    <label><input type="checkbox" name="extra" value="gift-box"> Gift box</label>
+                                    <label><input type="checkbox" name="extra" value="greeting-card"> Greeting card</label>
+                                    <label><input type="checkbox" name="extra" value="candles"> Birthday candles</label>
+                                </div>
+                                <div class="baris">
+                                    <label for="promo">Promo code</label>
+                                    <input type="text" id="promo" name="promo" list="daftar-promo" placeholder="see page 08">
+                                    <datalist id="daftar-promo">
+                                        <option value="MORNINGHONEY">
+                                        <option value="STUDENT">
+                                        <option value="EVENINGDEAL">
+                                        <option value="FREESHIPPING">
+                                    </datalist>
+                                </div>
+                                <div class="baris">
+                                    <label for="bayar">Payment</label>
+                                    <select id="bayar" name="bayar" required>
+                                        <option value="" disabled selected>choose one</option>
+                                        <option value="cash">Cash</option>
+                                        <option value="qris">QRIS</option>
+                                        <option value="transfer">Bank transfer</option>
+                                    </select>
+                                </div>
+                                <div class="baris">
+                                    <label for="catatan">Notes</label>
+                                    <textarea id="catatan" name="catatan" rows="2" placeholder="less sugar, write 'Happy Birthday' on the cake, etc."></textarea>
+                                </div>
+                            </fieldset>
+
+                            <div class="tombol-form">
+                                <button type="reset">Reset</button>
+                                <button type="submit">Place Order</button>
+                            </div>
+                            <p class="pesan-sukses" id="info-order"></p>
+                        </form>
+
+                        <div class="switch-wrapper">
+                            <div class="npnm switch-kiri">
+                                <!-- arrow balik -->
+                                <div class="npnm halaman">
+                                    <p class="mystery npnm">09.</p>
+                                </div>
+                                <a class="bg-babygreen radius-round click borderline" href="TartsnPies.html">
+                                    <img class="cutearrow" src="https://img.icons8.com/?size=100&id=bJ3zft1k7SN5&format=png&color=c38690" alt="">
+                                </a>
+                            </div>
+                            <a class="tombol-pesan mystery radius-round borderline" href="index.html">Back to Menu</a>
+                        </div>
+                    </div>
+                </td>
+
+                <!-- PAGE 10 : REVIEW & SARAN -->
+                <td class="genap">
+                    <div class="page-line full-wrapper">
+                        <div class="center-wrapper">
+                            <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
+                                <div class="npnm" style="margin: 0; padding: 0; width:30% ;">
+                                    <img class="menuimg radius-round borderline" src="https://i.pinimg.com/736x/53/46/69/534669a7d4c972e1863b80e877146d62.jpg" alt="">
+                                </div>
+                                <div class="menuthemes">
+                                    <h1 class="flavors pinkie semigede">Reviews &amp;Suggestions</h1>
+                                </div>
+                            </div>
+                        </div>
+
+                        <form id="form-review" class="form-wrapper radius-normal borderline mystery brownie" action="#" method="post">
+                            <fieldset>
+                                <legend>About You</legend>
+                                <div class="baris">
+                                    <label for="nama-review">Name</label>
+                                    <input type="text" id="nama-review" name="nama" placeholder="your name">
+                                </div>
+                                <div class="baris">
+                                    <label for="email-review">Email</label>
+                                    <input type="email" id="email-review" name="email" placeholder="you@email.com">
+                                </div>
+                                <div class="baris pilihan">
+                                    <label><input type="checkbox" name="anonim" value="ya"> Post my review anonymously</label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>Your Review</legend>
+                                <div class="baris">
+                                    <span>Rating</span>
+                                    <div class="bintang">
+                                        <input type="radio" id="bintang5" name="rating" value="5" required><label for="bintang5" title="5 stars">&#9733;</label>
+                                        <input type="radio" id="bintang4" name="rating" value="4"><label for="bintang4" title="4 stars">&#9733;</label>
+                                        <input type="radio" id="bintang3" name="rating" value="3"><label for="bintang3" title="3 stars">&#9733;</label>
+                                        <input type="radio" id="bintang2" name="rating" value="2"><label for="bintang2" title="2 stars">&#9733;</label>
+                                        <input type="radio" id="bintang1" name="rating" value="1"><label for="bintang1" title="1 star">&#9733;</label>
+                                    </div>
+                                </div>
+                                <div class="baris">
+                                    <label for="favorit">Favorite menu</label>
+                                    <select id="favorit" name="favorit">
+                                        <option value="" selected>-- pick your favorite --</option>
+                                        <optgroup label="Breads & Loaves">
+                                            <option>Milky Cloud Loaf</option>
+                                            <option>Chocolate Pull-Apart Bread</option>
+                                            <option>Lavender Sourdough</option>
+                                            <option>Round-Cheek Brioche</option>
+                                        </optgroup>
+                                        <optgroup label="Croissants & Pastries">
+                                            <option>Butter Croissant</option>
+                                            <option>Pain au Chocolat</option>
+                                            <option>Almond Croissant</option>
+                                            <option>Cromboloni</option>
+                                        </optgroup>
+                                        <optgroup label="Cakes & Slices">
+                                            <option>Strawberry Shortcake</option>
+                                            <option>Red Velvet</option>
+                                            <option>Basque Burnt Cheesecake</option>
+                                            <option>Rainbow Layer Cake</option>
+                                        </optgroup>
+                                        <optgroup label="Cupcakes & Muffins">
+                                            <option>Crown Cupcake</option>
+                                            <option>Unicorn Cupcake</option>
+                                            <option>Blueberry Muffin</option>
+                                            <option>Molten Chocolate Muffin</option>
+                                        </optgroup>
+                                        <optgroup label="Cookies & Biscuits">
+                                            <option>Chunky Chocolate Cookie</option>
+                                            <option>Sugar Star Cookies</option>
+                                            <option>Matcha White Choc Cookie</option>
+                                            <option>Cat's Tongue Biscuits</option>
+                                        </optgroup>
+                                        <optgroup label="Doughnuts">
+                                            <option>Pink Glazed Doughnut</option>
+                                            <option>Rainbow Sprinkle Doughnut</option>
+                                            <option>Custard Bomboloni</option>
+                                            <option>Tiramisu Doughnut</option>
+                                        </optgroup>
+                                        <optgroup label="Tarts & Pies">
+                                            <option>Glass Strawberry Tart</option>
+                                            <option>Egg Tart</option>
+                                            <option>Lemon Meringue</option>
+                                            <option>Cinnamon Apple Pie</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                                <div class="baris">
+                                    <span>What did you love?</span>
+                                    <div class="pilihan">
+                                        <label><input type="checkbox" name="suka" value="rasa"> Taste</label>
+                                        <label><input type="checkbox" name="suka" value="harga"> Price</label>
+                                        <label><input type="checkbox" name="suka" value="kemasan"> Packaging</label>
+                                        <label><input type="checkbox" name="suka" value="pelayanan"> Service</label>
+                                        <label><input type="checkbox" name="suka" value="tempat"> Place</label>
+                                    </div>
+                                </div>
+                                <div class="baris">
+                                    <label for="rekomen">Would you recommend us? <output id="nilai-rekomen" for="rekomen">7</output>/10</label>
+                                    <input type="range" id="rekomen" name="rekomen" min="0" max="10" value="7">
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>Suggestions</legend>
+                                <div class="baris">
+                                    <label for="saran">Tell us anything!</label>
+                                    <textarea id="saran" name="saran" rows="4" placeholder="new menu ideas, what we can do better..." required></textarea>
+                                </div>
+                            </fieldset>
+
+                            <div class="tombol-form">
+                                <button type="reset">Reset</button>
+                                <button type="submit">Send Review</button>
+                            </div>
+                            <p class="pesan-sukses" id="info-review"></p>
+                        </form>
+
+                        <div class="switch-wrapper">
+                            <div class="npnm switch-kanan">
+                                <!-- arrow lanjut, balik ke cover -->
+                                <div class="npnm halaman">
+                                    <p class="mystery npnm">10.</p>
+                                </div>
+                                <a class="bg-babygreen radius-round click borderline" href="index.html">
+                                    <img class="cutearrow" src="https://img.icons8.com/?size=100&id=PKB38Ea6dZtA&format=png&color=c38690" alt="">
+                                </a>
+                            </div>
+                            <a class="tombol-pesan mystery radius-round borderline" href="index.html">Back to Menu</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <script>
+            const formOrder = document.getElementById("form-order");
+            const inputJumlah = formOrder.querySelectorAll(".item-pesan input");
+            const total = document.getElementById("total");
+            const barisAlamat = document.getElementById("baris-alamat");
+            const alamat = document.getElementById("alamat");
+            const infoOrder = document.getElementById("info-order");
+
+            document.getElementById("tanggal").min = new Date().toISOString().split("T")[0];
+
+            function hitungTotal() {
+                let jumlah = 0;
+                inputJumlah.forEach(function (input) {
+                    jumlah += (Number(input.value) || 0) * Number(input.dataset.harga);
+                });
+                total.value = "Rp" + jumlah.toLocaleString("en-US");
+                return jumlah;
+            }
+
+            function cekMetode() {
+                const delivery = formOrder.metode.value === "delivery";
+                barisAlamat.hidden = !delivery;
+                alamat.required = delivery;
+            }
+
+            formOrder.addEventListener("input", hitungTotal);
+            formOrder.addEventListener("change", cekMetode);
+
+            formOrder.addEventListener("submit", function (e) {
+                e.preventDefault();
+                if (hitungTotal() === 0) {
+                    infoOrder.textContent = "Pick at least one menu item first!";
+                    return;
+                }
+                infoOrder.textContent = "Thank you, " + formOrder.nama.value + "! We'll confirm your order via WhatsApp.";
+                formOrder.reset();
+            });
+
+            formOrder.addEventListener("reset", function () {
+                setTimeout(function () {
+                    hitungTotal();
+                    cekMetode();
+                });
+            });
+
+            const formReview = document.getElementById("form-review");
+            const rekomen = document.getElementById("rekomen");
+            const nilaiRekomen = document.getElementById("nilai-rekomen");
+
+            rekomen.addEventListener("input", function () {
+                nilaiRekomen.value = rekomen.value;
+            });
+
+            formReview.addEventListener("submit", function (e) {
+                e.preventDefault();
+                document.getElementById("info-review").textContent = "Thanks for the feedback! See you again soon.";
+                formReview.reset();
+            });
+
+            formReview.addEventListener("reset", function () {
+                setTimeout(function () {
+                    nilaiRekomen.value = rekomen.value;
+                });
+            });
+        </script>
+    </body>
+</html>
